@@ -1,8 +1,8 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Middleware;
+namespace Segwitz\BasicShopifyAPI\Middleware;
 
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
 
 abstract class AbstractMiddleware
 {

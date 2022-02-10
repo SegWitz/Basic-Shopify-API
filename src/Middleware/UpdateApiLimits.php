@@ -1,10 +1,10 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Middleware;
+namespace Segwitz\BasicShopifyAPI\Middleware;
 
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Traits\IsResponseType;
-use Osiset\BasicShopifyAPI\Traits\ResponseTransform;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Traits\IsResponseType;
+use Segwitz\BasicShopifyAPI\Traits\ResponseTransform;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

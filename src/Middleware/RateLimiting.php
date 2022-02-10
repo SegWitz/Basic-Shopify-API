@@ -1,9 +1,9 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Middleware;
+namespace Segwitz\BasicShopifyAPI\Middleware;
 
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Traits\IsRequestType;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Traits\IsRequestType;
 use Psr\Http\Message\RequestInterface;
 
 /**

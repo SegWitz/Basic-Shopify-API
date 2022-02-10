@@ -1,5 +1,5 @@
 {
-    "name": "osiset/basic-shopify-api",
+    "name": "segwitz/basic-shopify-api",
     "type": "library",
     "description": "A basic Shopify API wrapper with REST and GraphQL support, powered by Guzzle.",
     "keywords": [
@@ -11,10 +11,6 @@
     ],
     "license": "MIT",
     "authors": [
-        {
-            "name": "Tyler King",
-            "email": "tyler@osiset.com"
-        },
         {
             "name": "Segwitz",
             "email": "hello@segwitz.com"
@@ -37,16 +33,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Osiset\\BasicShopifyAPI\\": "src/"
+            "Segwitz\\BasicShopifyAPI\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Osiset\\BasicShopifyAPI\\Test\\": "test/"
+            "Segwitz\\BasicShopifyAPI\\Test\\": "test/"
         }
     },
     "support": {
-        "issues": "https://github.com/osiset/basic-shopify-api/issues",
-        "source": "https://github.com/osiset/basic-shopify-api"
+        "issues": "https://github.com/SegWitz/Basic-Shopify-API/issues",
+        "source": "https://github.com/SegWitz/Basic-Shopify-API"
     }
 }

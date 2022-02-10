@@ -1,9 +1,9 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Clients;
+namespace Segwitz\BasicShopifyAPI\Clients;
 
 use GuzzleHttp\Exception\RequestException;
-use Osiset\BasicShopifyAPI\Contracts\GraphRequester;
+use Segwitz\BasicShopifyAPI\Contracts\GraphRequester;
 use Psr\Http\Message\ResponseInterface;
 
 /**

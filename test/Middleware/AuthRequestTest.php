@@ -1,13 +1,13 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Test\Middleware;
+namespace Segwitz\BasicShopifyAPI\Test\Middleware;
 
 use GuzzleHttp\Psr7\Request;
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Middleware\AuthRequest;
-use Osiset\BasicShopifyAPI\Options;
-use Osiset\BasicShopifyAPI\Session;
-use Osiset\BasicShopifyAPI\Test\BaseTest;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Middleware\AuthRequest;
+use Segwitz\BasicShopifyAPI\Options;
+use Segwitz\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\Test\BaseTest;
 use Psr\Http\Message\RequestInterface;
 
 class AuthRequestTest extends BaseTest

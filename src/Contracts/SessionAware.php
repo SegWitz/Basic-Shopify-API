@@ -1,8 +1,8 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Contracts;
+namespace Segwitz\BasicShopifyAPI\Contracts;
 
-use Osiset\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\Session;
 
 /**
  * Reprecents session awareness.

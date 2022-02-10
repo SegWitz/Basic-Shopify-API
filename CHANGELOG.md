@@ -181,8 +181,8 @@ To better the library, it has been reverted back to its original single-class fo
 *Contains breaking changes*
 
 * No longer a single file, it now namespaced under `OhmyBrew\ShopifyAPI`
-* GraphQL is now introduced under `Osiset\ShopifyAPI\GraphAPI`
-* REST is moved to `Osiset\ShopifyAPI\RestAPI`
+* GraphQL is now introduced under `Segwitz\ShopifyAPI\GraphAPI`
+* REST is moved to `Segwitz\ShopifyAPI\RestAPI`
 
 ## 1.0.1
 

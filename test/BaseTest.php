@@ -1,11 +1,11 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Test;
+namespace Segwitz\BasicShopifyAPI\Test;
 
 use Closure;
 use GuzzleHttp\Handler\MockHandler;
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Options;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Options;
 use PHPUnit\Framework\TestCase;
 
 abstract class BaseTest extends TestCase

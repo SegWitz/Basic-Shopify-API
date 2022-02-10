@@ -1,8 +1,8 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Test;
+namespace Segwitz\BasicShopifyAPI\Test;
 
-use Osiset\BasicShopifyAPI\ResponseAccess;
+use Segwitz\BasicShopifyAPI\ResponseAccess;
 
 class ResponseAccessTest extends BaseTest
 {

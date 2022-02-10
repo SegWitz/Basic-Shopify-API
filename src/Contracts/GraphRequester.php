@@ -1,6 +1,6 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Contracts;
+namespace Segwitz\BasicShopifyAPI\Contracts;
 
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Psr7\Uri;

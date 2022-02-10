@@ -1,6 +1,6 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Contracts;
+namespace Segwitz\BasicShopifyAPI\Contracts;
 
 /**
  * Reprecents time tracking.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI;
+namespace Segwitz\BasicShopifyAPI;
 
 use Closure;
 use Exception;
@@ -9,21 +9,21 @@ use GuzzleHttp\ClientInterface;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Promise\Promise;
 use GuzzleRetry\GuzzleRetryMiddleware;
-use Osiset\BasicShopifyAPI\Clients\Graph;
-use Osiset\BasicShopifyAPI\Clients\Rest;
-use Osiset\BasicShopifyAPI\Contracts\ClientAware;
-use Osiset\BasicShopifyAPI\Contracts\GraphRequester;
-use Osiset\BasicShopifyAPI\Contracts\RestRequester;
-use Osiset\BasicShopifyAPI\Contracts\SessionAware;
-use Osiset\BasicShopifyAPI\Contracts\StateStorage;
-use Osiset\BasicShopifyAPI\Contracts\TimeDeferrer;
-use Osiset\BasicShopifyAPI\Deferrers\Sleep;
-use Osiset\BasicShopifyAPI\Middleware\AuthRequest;
-use Osiset\BasicShopifyAPI\Middleware\RateLimiting;
-use Osiset\BasicShopifyAPI\Middleware\UpdateApiLimits;
-use Osiset\BasicShopifyAPI\Middleware\UpdateRequestTime;
-use Osiset\BasicShopifyAPI\Store\Memory;
-use Osiset\BasicShopifyAPI\Traits\ResponseTransform;
+use Segwitz\BasicShopifyAPI\Clients\Graph;
+use Segwitz\BasicShopifyAPI\Clients\Rest;
+use Segwitz\BasicShopifyAPI\Contracts\ClientAware;
+use Segwitz\BasicShopifyAPI\Contracts\GraphRequester;
+use Segwitz\BasicShopifyAPI\Contracts\RestRequester;
+use Segwitz\BasicShopifyAPI\Contracts\SessionAware;
+use Segwitz\BasicShopifyAPI\Contracts\StateStorage;
+use Segwitz\BasicShopifyAPI\Contracts\TimeDeferrer;
+use Segwitz\BasicShopifyAPI\Deferrers\Sleep;
+use Segwitz\BasicShopifyAPI\Middleware\AuthRequest;
+use Segwitz\BasicShopifyAPI\Middleware\RateLimiting;
+use Segwitz\BasicShopifyAPI\Middleware\UpdateApiLimits;
+use Segwitz\BasicShopifyAPI\Middleware\UpdateRequestTime;
+use Segwitz\BasicShopifyAPI\Store\Memory;
+use Segwitz\BasicShopifyAPI\Traits\ResponseTransform;
 
 /**
  * Segwitz

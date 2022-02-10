@@ -48,7 +48,7 @@ It works with both OAuth and private API apps.
 
 The recommended way to install is [through composer](http://packagist.org).
 
-    composer require osiset/basic-shopify-api
+    composer require segwitz/basic-shopify-api
 
 ## Usage
 
@@ -61,9 +61,9 @@ This assumes you properly have your app setup in the partner's dashboard with th
 For REST calls, the shop domain and access token are required.
 
 ```php
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Options;
-use Osiset\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Options;
+use Segwitz\BasicShopifyAPI\Session;
 
 // Create options for the API
 $options = new Options();
@@ -82,9 +82,9 @@ $result = $api->rest(...);
 For REST calls, the shop domain and access token are required.
 
 ```php
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Options;
-use Osiset\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Options;
+use Segwitz\BasicShopifyAPI\Session;
 
 // Create options for the API
 $options = new Options();
@@ -106,9 +106,9 @@ $promise->then(function (array $result) {
 For GraphQL calls, the shop domain and access token are required.
 
 ```php
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Options;
-use Osiset\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Options;
+use Segwitz\BasicShopifyAPI\Session;
 
 // Create options for the API
 $options = new Options();
@@ -127,9 +127,9 @@ $result = $api->graph(...);
 For GraphQL calls, the shop domain and access token are required.
 
 ```php
-use Osiset\BasicShopifyAPI\BasicShopifyAPI;
-use Osiset\BasicShopifyAPI\Options;
-use Osiset\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\BasicShopifyAPI;
+use Segwitz\BasicShopifyAPI\Options;
+use Segwitz\BasicShopifyAPI\Session;
 
 // Create options for the API
 $options = new Options();
@@ -292,7 +292,7 @@ You can use the alias `restAsync` to skip setting `sync` to `false`.
 The return value for the request will be an array containing:
 
 + `response` the full Guzzle response object
-+ `body` the JSON decoded response body (\Osiset\BasicShopifyAPI\ResponseAccess instance)
++ `body` the JSON decoded response body (\Segwitz\BasicShopifyAPI\ResponseAccess instance)
 + `errors` if any errors are detected, true/false
 + `exception` if errors are true, exception object is available
 + `status` the HTTP status code
@@ -307,7 +307,7 @@ The return value for the request will be a Guzzle promise which you can handle o
 The return value for the promise will be an object containing:
 
 + `response` the full Guzzle response object
-+ `body` the JSON decoded response body (\Osiset\BasicShopifyAPI\ResponseAccess instance)
++ `body` the JSON decoded response body (\Segwitz\BasicShopifyAPI\ResponseAccess instance)
 + `errors` if any errors are detected, true/false
 + `exception` if errors are true, exception object is available
 + `status` the HTTP status code
@@ -359,7 +359,7 @@ $api->graph(string $query, array $variables = []);
 The return value for the request will be an object containing:
 
 + `response` the full Guzzle response object
-+ `body` the JSON decoded response body (\Osiset\BasicShopifyAPI\ResponseAccess instance)
++ `body` the JSON decoded response body (\Segwitz\BasicShopifyAPI\ResponseAccess instance)
 + `errors` if there was errors or not, will return the errors if any are found
 + `status` the HTTP status code
 
@@ -519,9 +519,9 @@ See Guzzle's documentation on middleware. As well, you can browse this library's
 
 ### Storage
 
-For storing the current request times, API limits, request costs, etc. A basic in-memory array store is used `Osiset\BasicShopifyAPI\Store\Memory`.
+For storing the current request times, API limits, request costs, etc. A basic in-memory array store is used `Segwitz\BasicShopifyAPI\Store\Memory`.
 
-If you would like to implement a more advananced store such as one with Redis, simply implement `Osiset\BasicShopifyAPI\Contracts\StateStorage` and set the client to use it, example:
+If you would like to implement a more advananced store such as one with Redis, simply implement `Segwitz\BasicShopifyAPI\Contracts\StateStorage` and set the client to use it, example:
 
 ```php
 $timeStore = new RedisStore();
@@ -532,12 +532,12 @@ $api = new BasicShopifyAPI($options, $timeStore, $limitStore);
 
 ## Documentation
 
-Code documentation is [available here](https://osiset.com/Basic-Shopify-API) from phpDocumentor via `phpdoc -d src -t doc`.
+Code documentation is [available here](https://github.com/SegWitz/Basic-Shopify-API) from phpDocumentor via `phpdoc -d src -t doc`.
 
 ## LICENSE
 
-This project is released under the MIT [license](https://github.com/osiset/Basic-Shopify-API/blob/master/LICENSE).
+This project is released under the MIT [license](https://github.com/SegWitz/Basic-Shopify-API/blob/master/LICENSE).
 
 ## Misc
 
-Using Python? [Check out basic_shopify_api](https://github.com/osiset/basic_shopify_api).
+Using Python? [Check out basic_shopify_api](https://github.com/SegWitz/Basic-Shopify-API).

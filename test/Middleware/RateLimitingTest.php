@@ -1,10 +1,10 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Test\Middleware;
+namespace Segwitz\BasicShopifyAPI\Test\Middleware;
 
-use Osiset\BasicShopifyAPI\Middleware\RateLimiting;
-use Osiset\BasicShopifyAPI\Session;
-use Osiset\BasicShopifyAPI\Test\BaseTest;
+use Segwitz\BasicShopifyAPI\Middleware\RateLimiting;
+use Segwitz\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\Test\BaseTest;
 use ReflectionMethod;
 
 class RateLimitingTest extends BaseTest

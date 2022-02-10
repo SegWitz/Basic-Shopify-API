@@ -1,9 +1,9 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Store;
+namespace Segwitz\BasicShopifyAPI\Store;
 
-use Osiset\BasicShopifyAPI\Contracts\StateStorage;
-use Osiset\BasicShopifyAPI\Session;
+use Segwitz\BasicShopifyAPI\Contracts\StateStorage;
+use Segwitz\BasicShopifyAPI\Session;
 
 /**
  * In-memory storage for timestamps used by rate limit middleware.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Osiset\BasicShopifyAPI\Deferrers;
+namespace Segwitz\BasicShopifyAPI\Deferrers;
 
-use Osiset\BasicShopifyAPI\Contracts\TimeDeferrer;
+use Segwitz\BasicShopifyAPI\Contracts\TimeDeferrer;
 
 /**
  * Base time deferrer implementation.
