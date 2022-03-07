@@ -28,6 +28,7 @@ use Segwitz\BasicShopifyAPI\Traits\ResponseTransform;
 /**
  * Segwitz
  * Basic Shopify API for REST & GraphQL.
+ *
  */
 class BasicShopifyAPI implements SessionAware, ClientAware
 {
